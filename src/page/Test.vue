@@ -38,10 +38,87 @@
       />
     </div>
   </div>
+  <div class="button-examples">
+    <h2>Radio Button Examples</h2>
+    
+    <div class="example-section">
+      <h3>Basic Radio Buttons</h3>
+      <div class="example-group">
+        <Radio
+          name="fruit"
+          value="apple"
+          label="Apple"
+          checked
+        />
+        <Radio
+          name="fruit"
+          value="banana"
+          label="Banana"
+        />
+        <Radio
+          name="fruit"
+          value="orange"
+          label="Orange"
+        />
+      </div>
+    </div>
+    
+    <div class="example-section">
+      <h3>With Help Text</h3>
+      <Radio
+        name="size"
+        value="large"
+        label="Large Size"
+        helpText="This option sets the size to large"
+        checked
+      />
+      <Radio
+        name="size"
+        value="medium"
+        label="Medium Size"
+        helpText="This option sets the size to medium"
+      />
+    </div>
+    
+    <div class="example-section">
+      <h3>Different Sizes</h3>
+      <Radio
+        name="color"
+        value="red"
+        label="Large Radio"
+        size="large"
+        checked
+      />
+      <Radio
+        name="color"
+        value="blue"
+        label="Medium Radio"
+        size="medium"
+      />
+    </div>
+    
+    <div class="example-section">
+      <h3>Disabled State</h3>
+      <Radio
+        name="disabled-example1"
+        value="disabled1"
+        label="Disabled Unchecked"
+        disabled
+      />
+      <Radio
+        name="disabled-example2"
+        value="disabled2"
+        label="Disabled Checked"
+        checked
+        disabled
+      />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
 import Button from '@/components/atom/Button.vue';
+import Radio from '@/components/atom/Radio.vue';
 import iconUrl from '@/assets/icons/arrow-go-back.svg';
 
 const handleClick = () => {
