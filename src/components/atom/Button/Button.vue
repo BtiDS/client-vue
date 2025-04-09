@@ -33,7 +33,7 @@ export type ButtonType = "primary" | "secondary";
 export type ButtonStyle = "filled" | "outline";
 export type ButtonSize = "large" | "medium" | "small";
 export type ButtonState = "hover" | "focus" | "pressed" | "disabled";
-export type ButtonIconPosition = "left" | "right";
+export type ButtonIcon = "left" | "right";
 
 interface Props {
   label?: string;
@@ -42,7 +42,7 @@ interface Props {
   size?: ButtonSize;
   state?: ButtonState;
   icon?: string;
-  iconPosition?: ButtonIconPosition;
+  iconPosition?: ButtonIcon;
 }
 
 const props = withDefaults(defineProps<Props>(), {

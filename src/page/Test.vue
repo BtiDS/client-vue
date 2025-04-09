@@ -69,6 +69,99 @@
         />
       </div>
     </div>
+
+    <!-- <div class="examples-group">
+      <h2>Text Link Examples</h2>
+
+      <div class="example-row">
+        <h3>기본 링크</h3>
+        <div class="links-container">
+          <TextLink
+            label="기본 링크"
+            link="https://example.com"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Large Size 링크"
+            link="https://example.com"
+            size="large"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Small Size 링크"
+            link="https://example.com"
+            size="small"
+            :icon="arrowIcon"
+          />
+        </div>
+      </div>
+
+      <div class="example-row">
+        <h3>링크 타입</h3>
+        <div class="links-container">
+          <TextLink
+            label="Default 링크"
+            link="https://example.com"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Subtle 링크"
+            link="https://example.com"
+            type="subtle"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Subtle None 링크"
+            link="https://example.com"
+            type="subtle_none"
+            :icon="arrowIcon"
+          />
+        </div>
+      </div>
+
+      <div class="example-row">
+        <h3>링크 상태</h3>
+        <div class="links-container">
+          <TextLink
+            label="Hover 상태"
+            link="https://example.com"
+            state="hover"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Pressed 상태"
+            link="https://example.com"
+            state="pressed"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Disabled 상태"
+            link="https://example.com"
+            state="disabled"
+            :icon="arrowIcon"
+          />
+          <TextLink
+            label="Visited 상태"
+            link="https://example.com"
+            state="visited"
+            :icon="arrowIcon"
+          />
+        </div>
+      </div>
+
+      <div class="example-row">
+        <h3>아이콘 없는 링크</h3>
+        <div class="links-container">
+          <TextLink label="아이콘 없는 기본 링크" link="https://example.com" />
+          <TextLink
+            label="아이콘 없는 Subtle 링크"
+            link="https://example.com"
+            type="subtle"
+          />
+        </div>
+      </div>
+    </div> -->
+
     <div class="examples-group">
       <h2>Radio Button Examples</h2>
 
@@ -132,9 +225,11 @@
 </template>
 
 <script setup lang="ts">
-import Button from "@/components/atom/Button.vue";
-import Radio from "@/components/atom/Radio.vue";
+import Button from "@/components/atom/Button/Button.vue";
+import Radio from "@/components/atom/Radio/Radio.vue";
+import TextLink from "@/components/atom/Link/Link.vue";
 import iconUrl from "@/assets/icons/arrow-go-back.svg";
+import arrowIcon from "@/assets/icons/open_link_icon.svg";
 
 const handleClick = () => {
   console.log("Button clicked!");
@@ -165,6 +260,12 @@ const handleClick = () => {
     button {
       margin-right: 12px;
       margin-bottom: 12px;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
   }
 }
