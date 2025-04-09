@@ -1,0 +1,589 @@
+/* Design System CSS Variables */
+
+:root {
+  /* Common Colors */
+  --color-common-0: #ffffff;
+  --color-common-100: #000000;
+
+  /* Cool Neutral Colors */
+  --color-cool-neutral-0: var(--color-common-0);
+  --color-cool-neutral-5: #f8f9fa;
+  --color-cool-neutral-10: #f1f3f5;
+  --color-cool-neutral-20: #e9ecef;
+  --color-cool-neutral-30: #dee2e6;
+  --color-cool-neutral-40: #ced4da;
+  --color-cool-neutral-50: #adb5bd;
+  --color-cool-neutral-60: #868e96;
+  --color-cool-neutral-70: #495057;
+  --color-cool-neutral-80: #343a40;
+  --color-cool-neutral-90: #212529;
+  --color-cool-neutral-100: var(--color-common-100);
+
+  /* Red Colors */
+  --color-red-0: var(--color-common-0);
+  --color-red-5: #fff5f5;
+  --color-red-10: #ffe3e3;
+  --color-red-20: #ffc9c9;
+  --color-red-30: #ffa8a8;
+  --color-red-40: #ff8787;
+  --color-red-50: #ff6b6b;
+  --color-red-60: #fa5252;
+  --color-red-70: #f03e3e;
+  --color-red-80: #e03131;
+  --color-red-90: #c92a2a;
+  --color-red-100: var(--color-common-100);
+
+  /* Yellow Colors */
+  --color-yellow-0: var(--color-common-0);
+  --color-yellow-5: #fff9db;
+  --color-yellow-10: #fff3bf;
+  --color-yellow-20: #ffec99;
+  --color-yellow-30: #ffe066;
+  --color-yellow-40: #ffd43b;
+  --color-yellow-50: #fcc419;
+  --color-yellow-60: #fab005;
+  --color-yellow-70: #f59f00;
+  --color-yellow-80: #f08c00;
+  --color-yellow-90: #e67700;
+  --color-yellow-100: var(--color-common-100);
+
+  /* Green Colors */
+  --color-green-0: var(--color-common-0);
+  --color-green-5: #ebfbee;
+  --color-green-10: #d3f9d8;
+  --color-green-20: #b2f2bb;
+  --color-green-30: #8ce99a;
+  --color-green-40: #69db7c;
+  --color-green-50: #51cf66;
+  --color-green-60: #40c057;
+  --color-green-70: #37b24d;
+  --color-green-80: #2f9e44;
+  --color-green-90: #2b8a3e;
+  --color-green-100: var(--color-common-100);
+
+  /* Blue Colors */
+  --color-blue-0: var(--color-common-0);
+  --color-blue-5: #e7f5ff;
+  --color-blue-10: #d0ebff;
+  --color-blue-20: #a5d8ff;
+  --color-blue-30: #74c0fc;
+  --color-blue-40: #4dabf7;
+  --color-blue-50: #339af0;
+  --color-blue-60: #228be6;
+  --color-blue-70: #1c7ed6;
+  --color-blue-80: #1971c2;
+  --color-blue-90: #1864ab;
+  --color-blue-100: var(--color-common-100);
+
+  /* Primary Colors */
+  --color-primary-0: var(--color-common-0);
+  --color-primary-5: #eee7f9;
+  --color-primary-10: #d4c3ef;
+  --color-primary-20: #b89be6;
+  --color-primary-30: #9b71dc;
+  --color-primary-40: #8550d4;
+  --color-primary-50: #6e2fcc;
+  --color-primary-60: #642ac6;
+  --color-primary-70: #5521bd;
+  --color-primary-80: #471ab6;
+  --color-primary-90: #2d08ab;
+  --color-primary-100: var(--color-common-100);
+
+  /* Secondary Colors */
+  --color-secondary-0: var(--color-common-0);
+  --color-secondary-5: #e8faf2;
+  --color-secondary-10: #c7f2df;
+  --color-secondary-20: #a2eacb;
+  --color-secondary-30: #76e2b6;
+  --color-secondary-40: #4edaa4;
+  --color-secondary-50: #09d392;
+  --color-secondary-60: #00c286;
+  --color-secondary-70: #00ae77;
+  --color-secondary-80: #009d6a;
+  --color-secondary-90: #007c52;
+  --color-secondary-100: var(--color-common-100);
+
+  /* Typography */
+  --typo-font-weight-bold: Bold;
+  --typo-font-weight-medium: Medium;
+  --typo-font-weight-regular: Regular;
+  --typo-font-pretendard: Pretendard;
+  --typo-letter-spacing-0: 0rem;
+  --typo-letter-spacing-1: 0.062rem;
+
+  /* Numbers/Dimensions */
+  --number-0: 0rem;
+  --number-1: 0.062rem;
+  --number-2: 0.125rem;
+  --number-3: 0.25rem;
+  --number-4: 0.375rem;
+  --number-5: 0.5rem;
+  --number-6: 0.625rem;
+  --number-7: 0.75rem;
+  --number-8: 0.875rem;
+  --number-9: 1rem;
+  --number-10: 1.125rem;
+  --number-11: 1.25rem;
+  --number-12: 1.5rem;
+  --number-13: 1.75rem;
+  --number-14: 2rem;
+  --number-15: 2.25rem;
+  --number-16: 2.5rem;
+  --number-17: 2.75rem;
+  --number-18: 3rem;
+  --number-19: 3.5rem;
+  --number-20: 4rem;
+  --number-21: 4.5rem;
+  --number-22: 5rem;
+  --number-23: 6rem;
+  --number-max: 62.5rem;
+
+  /* System Colors */
+  /* Background */
+  --color-background-basic: var(--color-cool-neutral-20);
+  --color-background-lighter: var(--color-cool-neutral-5);
+  --color-background-light: var(--color-cool-neutral-10);
+  --color-background-dark: var(--color-cool-neutral-70);
+  --color-background-darker: var(--color-cool-neutral-80);
+  --color-background-inverse: var(--color-common-100);
+  --color-background-primary-basic: var(--color-primary-70);
+  --color-background-primary-light: var(--color-primary-50);
+  --color-background-primary-lighter: var(--color-primary-30);
+  --color-background-primary-darker: var(--color-primary-90);
+  --color-background-primary-dark: var(--color-primary-80);
+  --color-background-secondary-dark: var(--color-secondary-30);
+  --color-background-secondary-lighter: var(--color-secondary-5);
+  --color-background-secondary-light: var(--color-secondary-10);
+  --color-background-secondary-basic: var(--color-secondary-20);
+  --color-background-secondary-darker: var(--color-secondary-50);
+  --color-background-confirmed: var(--color-green-70);
+  --color-background-warning: var(--color-yellow-50);
+  --color-background-error: var(--color-red-70);
+  --color-background-primary-bright: var(--color-primary-5);
+
+  /* Text */
+  --color-text-basic: var(--color-cool-neutral-90);
+  --color-text-light: var(--color-cool-neutral-70);
+  --color-text-lighter: var(--color-cool-neutral-60);
+  --color-text-bright: var(--color-cool-neutral-30);
+  --color-text-warning: var(--color-yellow-50);
+  --color-text-inverse: var(--color-common-0);
+  --color-text-primary: var(--color-primary-70);
+  --color-text-secondary: var(--color-secondary-20);
+  --color-text-confirmed: var(--color-green-70);
+  --color-text-primary-light: var(--color-primary-20);
+  --color-text-secondary-light: var(--color-secondary-10);
+  --color-text-primary-dark: var(--color-primary-90);
+  --color-text-secondary-dark: var(--color-secondary-50);
+  --color-text-error: var(--color-red-60);
+
+  /* Border */
+  --color-border-basic: var(--color-cool-neutral-30);
+  --color-border-light: var(--color-cool-neutral-20);
+  --color-border-lighter: var(--color-cool-neutral-10);
+  --color-border-dark: var(--color-cool-neutral-50);
+  --color-border-darker: var(--color-cool-neutral-60);
+  --color-border-primary: var(--color-primary-70);
+  --color-border-secondary: var(--color-secondary-40);
+  --color-border-confirmed: var(--color-green-70);
+  --color-border-inverse: var(--color-common-0);
+  --color-border-warning: var(--color-yellow-50);
+  --color-border-error: var(--color-red-70);
+  --color-border-extreme: var(--color-cool-neutral-90);
+  --color-border-primary-light: var(--color-primary-60);
+  --color-border-primary-dark: var(--color-primary-90);
+  --color-border-secondary-light: var(--color-secondary-30);
+  --color-border-secondary-dark: var(--color-secondary-60);
+
+  /* Font Sizes */
+  /* Headings */
+  --font-size-heading-1: var(--number-16);
+  --font-size-heading-2: var(--number-14);
+  --font-size-heading-3: var(--number-12);
+  --font-size-heading-4: var(--number-11);
+  --font-size-heading-5: var(--number-9);
+
+  /* Display */
+  --font-size-display-1: var(--number-20);
+  --font-size-display-2: var(--number-17);
+  --font-size-display-3: var(--number-15);
+
+  /* Labels */
+  --font-size-label-1: var(--number-11);
+  --font-size-label-2: var(--number-10);
+  --font-size-label-3: var(--number-9);
+  --font-size-label-4: var(--number-8);
+
+  /* Body */
+  --font-size-body-1: var(--number-11);
+  --font-size-body-2: var(--number-10);
+  --font-size-body-3: var(--number-9);
+  --font-size-body-4: var(--number-8);
+
+  /* Border Radius */
+  --radius-xxlarge: var(--number-7);
+  --radius-xlarge: var(--number-6);
+  --radius-large: var(--number-5);
+  --radius-medium: var(--number-4);
+  --radius-small: var(--number-3);
+  --radius-xsmall: var(--number-2);
+  --radius-max: var(--number-max);
+
+  /* Gaps */
+  --gap-1: var(--number-2);
+  --gap-2: var(--number-3);
+  --gap-3: var(--number-5);
+  --gap-4: var(--number-7);
+  --gap-5: var(--number-8);
+  --gap-6: var(--number-9);
+  --gap-7: var(--number-10);
+  --gap-8: var(--number-12);
+  --gap-9: var(--number-14);
+  --gap-10: var(--number-16);
+  --gap-11: var(--number-18);
+  --gap-12: var(--number-20);
+
+  /* Paddings */
+  --padding-1: var(--number-2);
+  --padding-2: var(--number-3);
+  --padding-3: var(--number-5);
+  --padding-4: var(--number-6);
+  --padding-5: var(--number-7);
+  --padding-6: var(--number-8);
+  --padding-7: var(--number-9);
+  --padding-8: var(--number-10);
+  --padding-9: var(--number-12);
+  --padding-10: var(--number-13);
+  --padding-11: var(--number-14);
+}
+
+/* Component Specific Variables */
+:root {
+  /* Button Component */
+  --button-background-primary: var(--color-background-primary-basic);
+  --button-background-primary-light: var(--color-background-primary-light);
+  --button-background-primary-dark: var(--color-background-primary-darker);
+  --button-background-light: var(--color-background-light);
+  --button-background-error: var(--color-background-error);
+  --button-background-secondary-dark: var(--color-background-secondary-dark);
+  --button-background-secondary-light: var(--color-background-secondary-light);
+  --button-background-secondary: var(--color-background-secondary-basic);
+  --button-background-confirmed: var(--color-background-confirmed);
+  --button-background-warning: var(--color-background-warning);
+  --button-background-lighter: var(--color-background-lighter);
+  --button-background-primary-lighter: var(--color-background-primary-lighter);
+  --button-background-primary-bright: var(--color-background-primary-bright);
+  --button-background-secondary-lighter: var(
+    --color-background-secondary-lighter
+  );
+
+  --button-border-primary: var(--color-border-primary);
+  --button-border-secondary: var(--color-border-secondary);
+  --button-border-basic: var(--color-border-extreme);
+  --button-border-primary-light: var(--color-border-primary-light);
+  --button-border-primary-dark: var(--color-border-primary-light);
+  --button-border-secondary-light: var(--color-border-secondary-light);
+  --button-border-secondary-dark: var(--color-border-secondary-dark);
+
+  --button-text-secondary: var(--color-text-secondary);
+  --button-text-primary-light: var(--color-text-primary-light);
+  --button-text-light: var(--color-text-light);
+  --button-text-confirmed: var(--color-text-confirmed);
+  --button-text-primary: var(--color-text-primary);
+  --button-text-secondary-light: var(--color-text-secondary-light);
+  --button-text-error: var(--color-text-error);
+  --button-text-basic: var(--color-text-basic);
+  --button-text-primary-dark: var(--color-text-primary-dark);
+  --button-text-bright: var(--color-text-bright);
+  --button-text-inverse: var(--color-text-inverse);
+  --button-text-warning: var(--color-text-warning);
+  --button-text-secondary-dark: var(--color-text-secondary-dark);
+  --button-text-lighter: var(--color-text-lighter);
+
+  /* Button Sizes */
+  --button-height-large: var(--number-19);
+  --button-height-medium: var(--number-18);
+  --button-height-small: var(--number-15);
+
+  --button-padding-horizontal-large: var(--padding-11);
+  --button-padding-vertical-large: var(--padding-7);
+  --button-padding-horizontal-medium: var(--padding-10);
+  --button-padding-vertical-medium: var(--padding-5);
+  --button-padding-horizontal-small: var(--padding-9);
+  --button-padding-vertical-small: var(--padding-3);
+}
+
+/* Button Component Classes */
+.btn {
+  font-family: var(--typo-font-pretendard);
+  border-radius: var(--radius-medium);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: var(--typo-font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-large {
+  height: var(--button-height-large);
+  padding: var(--button-padding-vertical-large)
+    var(--button-padding-horizontal-large);
+  font-size: var(--font-size-body-1);
+}
+
+.btn-medium {
+  height: var(--button-height-medium);
+  padding: var(--button-padding-vertical-medium)
+    var(--button-padding-horizontal-medium);
+  font-size: var(--font-size-body-2);
+}
+
+.btn-small {
+  height: var(--button-height-small);
+  padding: var(--button-padding-vertical-small)
+    var(--button-padding-horizontal-small);
+  font-size: var(--font-size-body-3);
+}
+
+.btn-primary {
+  background-color: var(--button-background-primary);
+  color: var(--button-text-inverse);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-background-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--button-background-secondary);
+  color: var(--button-text-basic);
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-background-secondary-dark);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--button-border-basic);
+  color: var(--button-text-basic);
+}
+
+.btn-outline:hover {
+  background-color: var(--button-background-lighter);
+}
+
+.btn-error {
+  background-color: var(--button-background-error);
+  color: var(--button-text-inverse);
+}
+
+.btn-confirmed {
+  background-color: var(--button-background-confirmed);
+  color: var(--button-text-inverse);
+}
+
+.btn-warning {
+  background-color: var(--button-background-warning);
+  color: var(--button-text-basic);
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-error {
+  color: var(--color-text-error);
+}
+
+.text-warning {
+  color: var(--color-text-warning);
+}
+
+.text-confirmed {
+  color: var(--color-text-confirmed);
+}
+
+.bg-primary {
+  background-color: var(--color-background-primary-basic);
+}
+
+.bg-secondary {
+  background-color: var(--color-background-secondary-basic);
+}
+
+.bg-error {
+  background-color: var(--color-background-error);
+}
+
+.bg-warning {
+  background-color: var(--color-background-warning);
+}
+
+.bg-confirmed {
+  background-color: var(--color-background-confirmed);
+}
+
+.font-bold {
+  font-weight: var(--typo-font-weight-bold);
+}
+
+.font-medium {
+  font-weight: var(--typo-font-weight-medium);
+}
+
+.font-regular {
+  font-weight: var(--typo-font-weight-regular);
+}
+
+/* Heading styles */
+.heading-1 {
+  font-size: var(--font-size-heading-1);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.2;
+}
+
+.heading-2 {
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.2;
+}
+
+.heading-3 {
+  font-size: var(--font-size-heading-3);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.3;
+}
+
+.heading-4 {
+  font-size: var(--font-size-heading-4);
+  font-weight: var(--typo-font-weight-medium);
+  line-height: 1.4;
+}
+
+.heading-5 {
+  font-size: var(--font-size-heading-5);
+  font-weight: var(--typo-font-weight-medium);
+  line-height: 1.4;
+}
+
+/* Body text styles */
+.body-1 {
+  font-size: var(--font-size-body-1);
+  line-height: 1.5;
+}
+
+.body-2 {
+  font-size: var(--font-size-body-2);
+  line-height: 1.5;
+}
+
+.body-3 {
+  font-size: var(--font-size-body-3);
+  line-height: 1.5;
+}
+
+.body-4 {
+  font-size: var(--font-size-body-4);
+  line-height: 1.5;
+}
+
+/* Display styles */
+.display-1 {
+  font-size: var(--font-size-display-1);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.1;
+}
+
+.display-2 {
+  font-size: var(--font-size-display-2);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.1;
+}
+
+.display-3 {
+  font-size: var(--font-size-display-3);
+  font-weight: var(--typo-font-weight-bold);
+  line-height: 1.1;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--color-common-0);
+  border-radius: var(--radius-medium);
+  padding: var(--padding-7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Border utilities */
+.border {
+  border: 1px solid var(--color-border-basic);
+}
+
+.border-light {
+  border: 1px solid var(--color-border-light);
+}
+
+.border-primary {
+  border: 1px solid var(--color-border-primary);
+}
+
+.border-secondary {
+  border: 1px solid var(--color-border-secondary);
+}
+
+.border-error {
+  border: 1px solid var(--color-border-error);
+}
+
+/* Rounded corners */
+.rounded-sm {
+  border-radius: var(--radius-xsmall);
+}
+
+.rounded-md {
+  border-radius: var(--radius-medium);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-large);
+}
+
+.rounded-xl {
+  border-radius: var(--radius-xlarge);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Gap utilities */
+.gap-1 {
+  gap: var(--gap-1);
+}
+
+.gap-2 {
+  gap: var(--gap-2);
+}
+
+.gap-3 {
+  gap: var(--gap-3);
+}
+
+.gap-4 {
+  gap: var(--gap-4);
+}
+
+.gap-5 {
+  gap: var(--gap-5);
+}
+
+.gap-6 {
+  gap: var(--gap-6);
+}
