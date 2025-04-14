@@ -52,7 +52,6 @@ const props = withDefaults(defineProps<Props>(), {
   iconPosition: "right",
 });
 
-// 이벤트 정의
 const emit = defineEmits<{
   (e: "click"): void;
 }>();
@@ -66,70 +65,67 @@ const onClick = () => {
 
 <style lang="scss">
 .button {
-  font-weight: var(--typo-font-weight-medium);
-  border-radius: var(--radius-medium);
+  font-weight: var(--ref-typo-font-weight-medium);
+  border-radius: var(--systeme-radius-medium);
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  // Size styles
   &--large {
-    font-size: var(--font-size-body-1);
-    height: var(--button-height-large);
-    padding: var(--button-padding-vertical-large)
-      var(--button-padding-horizontal-large);
+    font-size: var(--ref-number-11);
+    height: var(--com-button-size-height-large);
+    padding: var(--com-button-size-padding-vertical-large)
+      var(--com-button-size-padding-horizontal-large);
 
     .button__icon {
-      width: var(--number-12);
-      height: var(--number-12);
+      width: var(--ref-number-12);
+      height: var(--ref-number-12);
     }
   }
 
   &--medium {
-    font-size: var(--font-size-body-2);
-    height: var(--button-height-medium);
-    padding: var(--button-padding-vertical-medium)
-      var(--button-padding-horizontal-medium);
+    font-size: var(--ref-number-10);
+    height: var(--com-button-size-height-medium);
+    padding: var(--com-button-size-padding-vertical-medium)
+      var(--com-button-size-padding-horizontal-medium);
 
     .button__icon {
-      width: var(--number-10);
-      height: var(--number-10);
+      width: var(--ref-number-10);
+      height: var(--ref-number-10);
     }
   }
 
   &--small {
-    font-size: var(--font-size-body-3);
-    height: var(--button-height-small);
-    font-weight: var(--typo-font-weight-regular);
-    padding: var(--button-padding-vertical-small)
-      var(--button-padding-horizontal-small);
-    border-radius: var(--radius-small);
+    font-size: var(--ref-number-9);
+    height: var(--com-button-size-height-small);
+    font-weight: var(--ref-typo-font-weight-regular);
+    padding: var(--com-button-size-padding-vertical-small)
+      var(--com-button-size-padding-horizontal-small);
+    border-radius: var(--systeme-radius-small);
 
     .button__icon {
-      width: var(--number-8);
-      height: var(--number-8);
+      width: var(--ref-number-8);
+      height: var(--ref-number-8);
     }
   }
 
-  // Icon styles
   &__icon {
     display: inline-block;
     object-fit: contain;
 
     &--left {
-      margin-right: var(--number-5);
+      margin-right: var(--ref-number-5);
     }
 
     &--right {
-      margin-left: var(--number-5);
+      margin-left: var(--ref-number-5);
     }
   }
 
-  // Primary filled button styles
   &--primary.button--filled {
-    background: var(--color-primary-70);
-    color: var(--color-common-0);
+    background: var(--com-button-color-background-primary);
+    color: var(--com-button-color-text-inverse);
     border: 2px solid transparent;
 
     .button__icon {
@@ -137,22 +133,22 @@ const onClick = () => {
     }
 
     &:hover:not(:disabled) {
-      background: var(--color-primary-50);
+      background: var(--com-button-color-background-primary-light);
     }
 
     &:focus:not(:disabled) {
-      background: var(--color-primary-70);
-      border: 2px solid var(--color-cool-neutral-90);
+      background: var(--com-button-color-background-primary);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &:active:not(:disabled) {
-      background: var(--color-primary-90);
+      background: var(--com-button-color-background-primary-dark);
       border: 2px solid transparent;
     }
 
     &:disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       cursor: default;
 
       .button__icon {
@@ -162,29 +158,28 @@ const onClick = () => {
     }
 
     &.button--hover {
-      background: var(--color-primary-50);
+      background: var(--com-button-color-background-primary-light);
     }
 
     &.button--focus {
-      background: var(--color-primary-70);
-      border: 2px solid var(--color-cool-neutral-90);
+      background: var(--com-button-color-background-primary);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &.button--pressed {
-      background: var(--color-primary-90);
+      background: var(--com-button-color-background-primary-dark);
     }
 
     &.button--disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
     }
   }
 
-  // Primary outline button styles
   &--primary.button--outline {
-    background: var(--color-cool-neutral-5);
-    color: var(--color-primary-70);
-    border: 1px solid var(--color-primary-70);
+    background: var(--ref-color-cool_neutral-5);
+    color: var(--com-button-color-text-primary);
+    border: 1px solid var(--com-button-color-border-primary);
 
     .button__icon {
       filter: brightness(0) saturate(100%) invert(27%) sepia(87%)
@@ -192,17 +187,17 @@ const onClick = () => {
     }
 
     &:hover:not(:disabled) {
-      background: var(--color-primary-5);
+      background: var(--com-button-color-background-primary-bright);
     }
 
     &:focus:not(:disabled) {
-      border: 2px solid var(--color-cool-neutral-90);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &:active:not(:disabled) {
-      background: var(--color-primary-5);
-      border: 1px solid var(--color-primary-90);
-      color: var(--color-primary-90);
+      background: var(--com-button-color-background-primary-bright);
+      border: 1px solid var(--com-button-color-border-primary-dark);
+      color: var(--com-button-color-text-primary-dark);
 
       .button__icon {
         filter: brightness(0) saturate(100%) invert(10%) sepia(95%)
@@ -211,8 +206,8 @@ const onClick = () => {
     }
 
     &:disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       border: none;
       cursor: default;
 
@@ -223,17 +218,17 @@ const onClick = () => {
     }
 
     &.button--hover {
-      background: var(--color-primary-5);
+      background: var(--com-button-color-background-primary-bright);
     }
 
     &.button--focus {
-      border: 2px solid var(--color-cool-neutral-90);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &.button--pressed {
-      background: var(--color-primary-5);
-      border: 1px solid var(--color-primary-90);
-      color: var(--color-primary-90);
+      background: var(--com-button-color-background-primary-bright);
+      border: 1px solid var(--com-button-color-border-primary-dark);
+      color: var(--com-button-color-text-primary-dark);
 
       .button__icon {
         filter: brightness(0) saturate(100%) invert(10%) sepia(95%)
@@ -242,16 +237,15 @@ const onClick = () => {
     }
 
     &.button--disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       border: none;
     }
   }
 
-  // Secondary filled button styles
   &--secondary.button--filled {
-    background: var(--color-secondary-20);
-    color: var(--color-common-0);
+    background: var(--com-button-color-background-secondary);
+    color: var(--com-button-color-text-inverse);
     border: 2px solid transparent;
 
     .button__icon {
@@ -259,22 +253,22 @@ const onClick = () => {
     }
 
     &:hover:not(:disabled) {
-      background: var(--color-secondary-10);
+      background: var(--com-button-color-background-secondary-light);
     }
 
     &:focus:not(:disabled) {
-      background: var(--color-secondary-30);
-      border: 2px solid var(--color-cool-neutral-90);
+      background: var(--com-button-color-background-secondary-dark);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &:active:not(:disabled) {
-      background: var(--color-secondary-30);
+      background: var(--com-button-color-background-secondary-dark);
       border: 2px solid transparent;
     }
 
     &:disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       cursor: default;
 
       .button__icon {
@@ -284,29 +278,28 @@ const onClick = () => {
     }
 
     &.button--hover {
-      background: var(--color-secondary-10);
+      background: var(--com-button-color-background-secondary-light);
     }
 
     &.button--focus {
-      background: var(--color-secondary-30);
-      border: 2px solid var(--color-cool-neutral-90);
+      background: var(--com-button-color-background-secondary-dark);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &.button--pressed {
-      background: var(--color-secondary-30);
+      background: var(--com-button-color-background-secondary-dark);
     }
 
     &.button--disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
     }
   }
 
-  // Secondary outline button styles
   &--secondary.button--outline {
-    background: var(--color-cool-neutral-5);
-    color: var(--color-secondary-30);
-    border: 1px solid var(--color-secondary-30);
+    background: var(--ref-color-cool_neutral-5);
+    color: var(--com-button-color-text-secondary);
+    border: 1px solid var(--com-button-color-border-secondary);
 
     .button__icon {
       filter: brightness(0) saturate(100%) invert(89%) sepia(11%)
@@ -314,21 +307,21 @@ const onClick = () => {
     }
 
     &:hover:not(:disabled) {
-      background: var(--color-secondary-5);
+      background: var(--com-button-color-background-secondary-lighter);
     }
 
     &:focus:not(:disabled) {
-      border: 2px solid var(--color-cool-neutral-90);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &:active:not(:disabled) {
-      background: var(--color-secondary-5);
-      border: 1px solid var(--color-secondary-30);
+      background: var(--com-button-color-background-secondary-lighter);
+      border: 1px solid var(--com-button-color-border-secondary-dark);
     }
 
     &:disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       border: none;
       cursor: default;
 
@@ -339,21 +332,21 @@ const onClick = () => {
     }
 
     &.button--hover {
-      background: var(--color-secondary-5);
+      background: var(--com-button-color-background-secondary-lighter);
     }
 
     &.button--focus {
-      border: 2px solid var(--color-cool-neutral-90);
+      border: 2px solid var(--ref-color-cool_neutral-90);
     }
 
     &.button--pressed {
-      background: var(--color-secondary-5);
-      border: 1px solid var(--color-secondary-30);
+      background: var(--com-button-color-background-secondary-lighter);
+      border: 1px solid var(--com-button-color-border-secondary-dark);
     }
 
     &.button--disabled {
-      background: var(--color-cool-neutral-10);
-      color: var(--color-cool-neutral-60);
+      background: var(--ref-color-cool_neutral-10);
+      color: var(--ref-color-cool_neutral-60);
       border: none;
     }
   }
